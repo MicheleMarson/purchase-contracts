@@ -1,0 +1,129 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #101216;
+  color: #EAE9DF;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a{
+  color: #EAE9DF;
+  text-decoration: none;
+}
+
+.container__nav{
+  background-color: #EAE9DF;
+}
+
+nav a, footer a{
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  color: #101216;
+}
+nav a:hover, footer a:hover{
+  color: #39445b;
+}
+
+nav, .container__section{
+  padding: 1rem;
+}
+
+.contracts{
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1280px;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contracts__contract{
+  flex-grow: 1;
+  padding: 1rem;
+  background: #1d212b;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .2s background ease-out;
+}
+
+.contracts__contract p{
+  font-size: 14px;
+}
+
+.contracts__contract:hover{
+  background: #272d3d;
+}
+
+/* filter */
+.filter{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.filter > *{
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 0 1rem;
+}
+.filter .filter__input{
+  flex-grow: 2;
+}
+.filter input{
+  width: 100%; 
+}
+.filter select{
+  background: #52b4de;
+}
+/* filter */
+
+/* STATUS */
+.contracts__contract.kreirano, .articles__box.kreirano{
+  border:2px solid #08851c;
+}
+.kreirano .status, .articles__box.kreirano .status{
+  color: #08851c;
+}
+
+.contracts__contract.naručeno, .articles__box.naručeno{
+  border:2px solid #d2de52;
+}
+.naručeno .status, .articles__box.naručeno .status{
+  color: #d2de52;
+}
+
+.contracts__contract.isporučeno, .articles__box.isporučeno{
+  border:2px solid #838783;
+}
+.isporučeno .status, .articles__box.isporučeno .status{
+  color: #838783;
+}
+/* STATUS */
+
+/* ARTICLES */
+.articles__article{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.articles__box{
+  background: #1d212b;
+  padding: 2rem;
+}
+/* ARTICLES */
+
+/* CREATE CONTRACT */
+.createContract{
+  padding: 2rem 0;
+}
+/* CREATE CONTRACT */
+
+
+/* RESPONSIVE */
+@media (max-width:860px){
+  
+}
